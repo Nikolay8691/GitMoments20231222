@@ -4,7 +4,29 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>hello!</title>
-	<script></script>
+	<script>
+		var budgetThisMonth = prompt("Your monthly budget? : ", 0);
+		var dateToday = prompt("What is the date ? (YYYY-MM-DD) : ");
+
+		var appData = {
+			budget : budgetThisMonth,
+			timeData : dateToday,
+			mustBeExpences : {},
+			optionalExpences : {},
+			income : [],
+			savings : false
+		};
+
+		let a = prompt("Input the budget 'must be' article for this month : ", "production");
+		let b = +prompt("How much is the cost? : ");
+
+		var expences = {a:b}
+
+		appData.mustBeExpences = expences;
+
+		alert("24Hour budget is " + appData.budget/30);
+		alert("plus mustBeExpences for month is " + appData.mustBeExpences.a);
+	</script>
 </head>
 <body>
 	<h1>Hello world!</h1>
