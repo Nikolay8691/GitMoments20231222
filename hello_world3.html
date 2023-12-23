@@ -19,13 +19,14 @@
 
 		let a = prompt("Input the budget 'must be' article for this month : ", "production");
 		let b = +prompt("How much is the cost? : ");
-
+		console.log(typeof(b));
 		var expences = {a:b}
 
 		appData.mustBeExpences = expences;
 
 		alert("24Hour budget is " + appData.budget/30);
 		alert("plus mustBeExpences for month is " + appData.mustBeExpences.a);
+		console.log("mustBeExpences article is " + a);
 	</script>
 </head>
 <body>
@@ -35,6 +36,7 @@
 	<h3>Hello world +++ !!!</h3>
 
 	<h3>Hello conflicts!</h3>
+
 
 </body>
 </html>
